@@ -12,19 +12,19 @@ A 4-page Power BI report analyzing **3 fiscal years of sales (Jul 2023 to Jun 20
 ## Business questions
 
 1. How did sales and profit change from FY2024 to FY2026, and which channel sells more?
-2. What are the monthly patterns, and what might FY2027 look like?
-3. Which products and channels make or lose money, and why does the reseller channel earn so little?
-4. Where do sales come from, and who are the top customers?
+2. Which products and channels make or lose money?
+3. Where do sales come from, and who are the top customers?
+4. What are the monthly patterns, and what might FY2027 look like?
 
 ## Key insights
 
-- **Sales more than doubled in two years:** $24.1M in FY2024, $34.2M in FY2025 (+42%), $52.1M in FY2026 (+53%).
+- **Sales more than doubled in two years:** $24.1M in FY2024, $34.2M in FY2025 (+42%), $52.1M in FY2026 (+52.5%).
 - **Resellers bring most of the revenue but almost none of the profit:** resellers are 73% of sales ($81.0M) at a 1.2% margin, while online sales earn a 41.1% margin. The reseller channel lost money overall in FY2026.
-- **The likely cause is discounting:** resellers buy at about 41% below list price. Road and Touring bikes lost about $2.1M combined through resellers, and 328 of 633 active resellers were unprofitable.
-- **Online orders jumped in FY2026:** orders grew from 4,776 to 23,469, while average order value fell from about $7,150 to $2,221 as accessories and clothing took off online.
-- **Bikes are the business:** about 87% of sales. The top 3 products are all Mountain-200 bikes.
+- **The likely cause is discounting:** resellers buy at about 41% below list price. Bikes sold through resellers have a -0.7% margin, compared with 40.6% online, and many individual resellers are unprofitable.
+- **Online customers grew five-fold in FY2026:** from 3.4K to 17.6K. Orders grew from 4,776 to 23,469, while average order value fell from about $7,150 to $2,221 as many more people placed smaller orders.
+- **Bikes are the business:** $95M of $110M in sales (about 87%).
 - **Sales are seasonal:** November, May, August and September are the strongest months. January and October are the weakest.
-- **North America drives about 72% of sales,** led by the US Southwest ($24.3M).
+- **North America drives about 72% of sales,** led by the US Southwest ($24.3M), then Canada ($16.4M) and the US Northwest ($16.2M).
 
 ## Recommendations
 
@@ -39,14 +39,14 @@ A 4-page Power BI report analyzing **3 fiscal years of sales (Jul 2023 to Jun 20
 ### 1. Executive Overview
 ![Executive Overview](images/01-executive-overview.png)
 
-### 2. Trends and Forecast
-![Trends and Forecast](images/02-trends-forecast.png)
+### 2. Profit by Product and Channel
+![Profit by Product and Channel](images/02-profit-by-product-and-channel.png)
 
-### 3. Products and Channels
-![Products and Channels](images/03-products-channels.png)
+### 3. Customers and Geography
+![Customers and Geography](images/03-customers-and-geography.png)
 
-### 4. Customers and Geography
-![Customers and Geography](images/04-customers-geography.png)
+### 4. Trends and Forecast
+![Trends and Forecast](images/04-trends-and-forecast.png)
 
 ---
 
@@ -95,7 +95,7 @@ Average Discount % = 1 - DIVIDE ( [Total Sales], [List Price Value] )
 
 ## Features used
 
-Fiscal calendar table, hierarchies with drill-down (product, geography, fiscal calendar), forecasting on the Analytics pane, scatter chart, decomposition tree, conditional formatting, slicers synced across pages, and page navigation buttons.
+Fiscal calendar table, drill-down hierarchies, 12-month forecast on the Analytics pane, scatter chart, decomposition tree, conditional formatting (red = loss), and fiscal year and channel slicers on every page.
 
 ## Files in this repo
 
